@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+:root {
+    --black-text-shadow: .1rem .1rem 0 rgba(0, 0, 0, .8);
+    --white-text-shadow: .12rem .12rem 0 rgba(255, 255, 255, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: var(--black-text-shadow);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 15px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.header .logo {
+    text-shadow: var(--black-text-shadow);
+    font-size: 1.5em;
+    color: #b6d7a8;
+    text-decoration: none;
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(images/jungle.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 150px 60px 0;
+}
+
+.home .content {
+    max-width: 600px;
+}
+
+.content h2 {
+    color: #476a26;
+    text-shadow: var(--white-text-shadow);
+    font-size: 3.2em;
+    letter-spacing: .03em;
+}
+
+.content p {
+    color: #eeffe8;
+    margin: 10px 0 40px;
+}
+
+.home .wrapper-login {
+    position: relative;
+    width: 440px;
+}
+
+.wrapper-login h2 {
+    font-size: 2.5em;
+    color: #476a26;
+    text-shadow: var(--white-text-shadow);
+    text-align: center;
+}
+
+.wrapper-login .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 40px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 40px;
+    font-size: 1em;
+    color: #fff;
+    padding: 0 25px 0 45px;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 45px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #fff;
+    pointer-events: none;
+    transition: .3s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    font-size: .8em;
+    top: -14px;
+    left: 17px;
+}
+
+.input-box .icon {
+    position: absolute;
+    top: 14px;
+    left: 15px;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.wrapper-login .remember-forgot {
+    font-size: .9em;
+    color: #fff;
+    margin: -25px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember-forgot label input {
+    accent-color: #3d4d37;
+    margin-right: 3px;
+}
+
+.remember-forgot a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.wrapper-login .btn {
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    background: linear-gradient(90deg, #102206, #74806d);
+    box-shadow: 0 8px 10px rgba(0, 0, 0, .5);
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+}
+
+.wrapper-login .register-link {
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.register-link p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    background: url("images/jungle.jpg") no-repeat;
+    background-size: cover;
+    /* #3d4d37; */
+}
+
+.welcome-text {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    width: 58%;
+    height: 100%;
+    color: #e4e4e4;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    height: 550px;
+    background: transparent;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    /* margin-top: 20px; */
+}
+
+
+
+.container .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 58%;
+    height: 100%;
+    background-color: transparent;
+    padding: 80px;
+    color: #e4e4e4;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.content .logo {
+    font-size: 30px;
+}
+
+.text-sci h2 {
+    font-size: 40px;
+    line-height: 1;
+}
+
+.text-sci p {
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+.social-icons a i {
+    font-size: 22px;
+    color: #e4e4e4;
+    margin-right: 10px;
+    transition: .5s ease;
+}
+
+.container .logreg-box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(100% - 58%);
+    height: 100%;
+}
+
+.logreg-box .form-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+}

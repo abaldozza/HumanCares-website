@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+:root {
+    --green: #16a085;
+    --black: #444;
+    --light-color: #777;
+    --box-shadow: .2rem .2rem 0 rgba(22, 160, 133, .2);
+    --text-shadow: .2rem .2rem 0 rgba(0, 0, 0, .2);
+    --border: .2rem solid var(--green);
+}
+
+body {
+    background-image: url("images/forest.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    transition: all .2s ease-out;
+    text-decoration: none;
+}
+
+#text {
+    display: block;
+    border: 2px solid #ccc;
+    width: 95%;
+    padding: 10px;
+    margin: auto;
+    border-radius: 5px;
+}
+
+label {
+    color: #e8f4ea;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.signup {
+    color: #e8f4ea;
+    font-size: 1rem;
+    line-height: 1.8;
+    padding: 10px;
+}
+
+.signup:hover {
+    color: var(--green);
+}
+
+#button {
+    float: right;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-right: 10px;
+    border: 2px solid #999;
+    box-shadow: var(--box-shadow);
+    background-color: #e8f4ea;
+    color: #888;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#button:hover {
+    background: var(--green);
+    color: #fff;
+}
+
+.error {
+    background: #F2DEDE;
+    color: #A94442;
+    padding: 10px;
+    width: 95%;
+    border-radius: 5px;
+    padding: 10px;
+    margin: auto;
+}
+
+
+#box {
+    width: 500px;
+    border: 2px solid #ccc;
+    padding: 30px;
+    background: #49796b;
+    border-radius: 15px;
+    margin-top: 2rem;
+}
+
+.content h3 {
+    color: #e8f4ea;
+    text-shadow: var(--text-shadow);
+    font-size: 3.5rem;
+    line-height: 1.8;
+    text-align: center;
+}
